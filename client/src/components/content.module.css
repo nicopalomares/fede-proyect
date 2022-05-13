@@ -1,0 +1,28 @@
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 350px;
+    background-color: #ffd60a;
+    opacity: 0.6;
+    position: relative;
+}
+.img {
+    background: white;
+    width: 180px;
+    height: 55px;
+    text-align: center;
+}
+.text {
+    margin-top: 65px;
+    color: white;
+    font-weight: 600;    
+}
+.flecha {
+    width: 25px;
+    height: 25px;
+    color: white;
+    position: absolute;
+    bottom: 5px;
+}
