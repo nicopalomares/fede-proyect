@@ -6,7 +6,7 @@ export default function Content() {
   return (
     <div className={style.content}>
         <div className={style.img}> imagen</div>
-        <div className={style.text}>Hacela Corta, Paga Con QRIO</div>
+        <div className={style.text}>Hacela corta, paga con QRIO!</div>
         < BsFillCaretDownFill className={style.flecha}/>
     </div>
   )
