@@ -15,9 +15,7 @@ export default function Descrip() {
       <div className={style.subTitle}>
         <h4>Productos QRIO</h4>
       </div>
-      <div className={style.products}>
-        PRODUCTOS
-      </div>
+      <div className={style.products}>PRODUCTOS</div>
     </div>
   );
 }
