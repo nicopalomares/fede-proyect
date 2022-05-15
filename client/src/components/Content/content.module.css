@@ -7,10 +7,9 @@
     background-color: #ffd60a;
     position: relative;
 }
-.img {
-    background: black;
-    width: 180px;
-    height: 55px;
+.img svg{
+    width: 200px;
+    height: 200px;
     text-align: center;
 }
 .text {
@@ -25,4 +24,9 @@
     color: black;
     position: absolute;
     bottom: 5px;
+}
+.imagen {
+    width: 250px;
+    height: 250px;
+    background-color: black;
 }

@@ -12,9 +12,8 @@ export default function Contact() {
           <input placeholder="Email"/>
         </form>
       </div>
-      {/* <div className={style.contentButton}> */}
+
       <button className={style.boton}>Enviar</button>
-      {/* </div>s */}
     </div>
   );
 }
