@@ -1,20 +1,5 @@
 .content {
     height: 100vh;
-    background-color: rgb(247, 247, 247);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: black;
-    opacity: 1;
-}
-.titulo {
-    margin: 0%;
-}
-.parrafo {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    font-size: 12px;
-
 }
 .subTitle {
     display: flex;
@@ -27,10 +12,10 @@
     font-weight: 200;
 }
 .products {
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200px;
     background-color: black;
     color: white;
 }
