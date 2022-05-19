@@ -1,0 +1,27 @@
+
+.content {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+ svg{
+    width: 70px;
+    height: 70px;
+}
+.links a {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+@media (min-width:768px){
+  .mov {
+    display: none;
+  }
+}
+@media (max-width:768px){
+  .links {
+    display: none;
+  }
+}

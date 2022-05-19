@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0px;
 }
 .content {
@@ -17,5 +17,11 @@ body {
   font-size: 10px;
   font-weight: 600;
   color: black;
+} */
+.logo svg{
+display: flex;
+justify-content: center;
+margin-top: 15px;
+height: 80px;
+width: 150px;
 }
-/* @media (max-width: ); */
