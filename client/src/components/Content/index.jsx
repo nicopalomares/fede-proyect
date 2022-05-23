@@ -15,7 +15,7 @@ export default function Content() {
     },
   };
   return (
-    <div className={style.content}>
+    <div className={style.contentC}>
       {/* <Lottie
         options={defaultOptions}
         className={style.img}

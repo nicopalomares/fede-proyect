@@ -1,27 +1,74 @@
-
-.content {
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-} 
- svg{
-    width: 70px;
-    height: 70px;
-}
-.links a {
-  padding: 10px;
+.navLinks {
   text-decoration: none;
-  color: black;
-  font-weight: 500;
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  flex-direction: row;
 }
-@media (min-width:768px){
-  .mov {
+.navLinks a {
+ text-decoration: none;
+ font-size: 20px;
+ font-weight: 500;
+ color: black;
+}
+.normalNavigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.content .normalNavigation svg{ 
+  width: 90px;
+  height: 90px;
+}
+.content .movileNavigation {
+  display: none;
+}
+
+@media (max-width:775px){
+  .content .normalNavigation {
     display: none;
   }
-}
-@media (max-width:768px){
-  .links {
-    display: none;
+  .content .movileNavigation {
+    display: flex;
+    align-items: center;
+    position: relative;
+    transition: all 0.6s
   }
-}
+  .content .movileNavigation .hamburger {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 20px;
+    right: 5%;
+    z-index: 100;
+  }
+  .content .movileNavigation .close {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 20px;
+    right: 55%;
+    z-index: 100;
+  }
+  .content .movileNavigation .navLinks li a{
+    color: white;
+  }
+  .content ul {
+    display: flex;
+    flex-direction:column;
+    justify-content: first baseline;
+    position: absolute;
+    top:0;
+    margin: 0;
+    height: 100vh;
+    right: 0;
+    width: 60%;
+    background-color: #161616;
+
+
+  }
+  .content ul li {
+    margin-top: 50px;
+    color: white;
+  }
+} 
