@@ -1,18 +1,48 @@
 import React from "react";
-import style from "./NavBar.module.css"
+import style from "./NavBar.module.css";
 
-export default function NavLinks({isMobile,closeMobileMenu}) {
+import { Link, animateScroll as scroll } from "react-scroll";
+
+
+export default function NavLinks({ isMobile, closeMobileMenu }) {
   return (
-      <ul className={style.navLinks}>
-        <li onClick={()=>isMobile && closeMobileMenu()}>
-          <a href=".contentC">Que es QRIO?</a>
-        </li>
-        <li onClick={()=>isMobile && closeMobileMenu()}>
-          <a href="#2">Que es QRIO?</a>
-        </li>
-        <li onClick={()=>isMobile && closeMobileMenu()}>
-          <a href="#3">Que es QRIO?</a>
-        </li>
-      </ul>
+    <ul className={style.navLinks}>
+      <li onClick={() => isMobile && closeMobileMenu()}>
+        <Link
+          activeClass="active"
+          to="section1"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+        >
+          Que es QRIO?
+        </Link>
+      </li>
+      <li onClick={() => isMobile && closeMobileMenu()}>
+        <Link
+          activeClass="active"
+          to="section2"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+        >
+          Que es QRIO?
+        </Link>
+      </li>
+      <li onClick={() => isMobile && closeMobileMenu()}>
+        <Link
+          activeClass="active"
+          to="section3"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+        >
+          Que es QRIO?
+        </Link>
+      </li>
+    </ul>
   );
 }
