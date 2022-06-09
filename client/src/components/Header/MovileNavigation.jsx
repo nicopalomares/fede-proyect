@@ -6,7 +6,7 @@ import {IoMdCloseCircle} from "react-icons/io"
 
 export default function MovileNavigation() {
   const [open,setOpen] = useState(false)
-  let iconClose = <IoMdCloseCircle color="white" className={style.close} onClick={()=>setOpen(!open)}/>
+  let iconClose = <IoMdCloseCircle color="#FCF267" className={style.close} onClick={()=>setOpen(!open)}/>
   let iconHamburger = <GiHamburgerMenu className={style.hamburger} onClick={()=>setOpen(!open)}/>
   const closeMobileMenu = () => setOpen(false)
   return (

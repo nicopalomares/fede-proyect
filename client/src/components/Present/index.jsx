@@ -18,15 +18,24 @@ export default function Content() {
   return (
     <div className={style.contentC}>
       <div className={style.contentImport}>
-        <Lottie
-          options={defaultOptions}
-          className={style.img}
-          height={400}
-          width={400}
-        />
+        <div className={style.img}>
+          <Lottie
+            options={defaultOptions}
+            height={"80%"}
+            width={"80%"}
+          />
+        </div>
         <div>
-        <QRIO />
-        <div className={style.text}>Hacela corta, paga con QRIO!</div>
+          <QRIO />
+          <h3 className={style.titulo}>Hacela corta ,Paga usando QRIO!</h3>
+          <br />
+          <div className={style.text}>
+            QRIO, es un sistema de automatización de acciones a través de pagos
+            electronicos.Hacemos que la vida, sea más simple.
+            <br />
+            <br />
+            Tranquilo, ya estamos llegando...
+          </div>
         </div>
       </div>
 
