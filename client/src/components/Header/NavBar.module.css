@@ -21,6 +21,11 @@
   background-color:#FCF267 ;
   text-align: center;
   cursor: pointer;
+  transition: all;
+  transition-duration: 0.5s;
+}
+.links:hover {
+  background-color: #403d396c;
 }
 .normalNavigation {
   display: flex;
